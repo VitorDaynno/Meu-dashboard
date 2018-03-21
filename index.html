@@ -1,23 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
+	<meta charset="utf-8" />
 	<title>Meu Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1", shrink-to-fit=no>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 </head>
 <body>
-	<div id="header">
-		Gestão de gastos
+	<div class="container-fluid " id="header">
+		<h5>
+			Gestão de gastos <span id="progress" class="badge badge-success ">Em progresso</span> 
+		</h5>
 	</div>
 	
-	<div id="screen">
-		<div id="historic">
-		</div>
-		<div id="panel">
-			<canvas id="myChart" ></canvas>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="card col-3" id="Menu">
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">
+						<img src="images/glyphicons-21-home.png"/>
+						<span class="align-middle">
+						  &nbsp; Início
+						</span>
+					</li>
+					<li class="list-group-item">
+						<img src="images/glyphicons-58-history.png"/>
+						<span class="align-middle">
+						  &nbsp; Histórico
+						</span>
+					</li>
+				</ul>
+			</div>
+			<div class="col-9">
+				<div id="panel">
+					<canvas id="myChart" ></canvas>
+				</div>
+			</div>
 		</div>
 	</div>
+
 </body>
-<script type="text/javascript" src="js/historic.js"></script>
 <script type="text/javascript" src="js/chart.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </html>
